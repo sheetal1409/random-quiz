@@ -117,6 +117,9 @@
 @media (max-width:500px) {
   .answer-options {
     border-radius: 0.5rem;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 10px;
   }
 }
 

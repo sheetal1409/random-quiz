@@ -2,7 +2,7 @@
 import React from "react"
 import Question from "./Question"
 import OptionList from "./OptionList";
-import MainPage from "./MainPage";
+
 
 
 function shuffleArray(array) {

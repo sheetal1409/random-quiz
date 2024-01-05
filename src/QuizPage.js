@@ -22,8 +22,6 @@ export default function QuizPage(props) {
     const [selected, setSelected] = React.useState({})
     const [newQuiz, setNewQuiz] = React.useState(false)
 
-
-
     const count = "5"
     React.useEffect(() => {
 
@@ -31,7 +29,6 @@ export default function QuizPage(props) {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-
                 let questionList = []
                 for (var i = 0; i < count; i++) {
                     let options = []
@@ -89,6 +86,7 @@ export default function QuizPage(props) {
         </div>
     ))
 
+
     return (
         <div className="quizPage">
             <div className="page-content">
@@ -96,7 +94,7 @@ export default function QuizPage(props) {
                     {results}
                 </div>
                 <div className="quizpage-button">
-                    {!newQuiz && <button className="checkAns" onClick={checkAnswer}>Check answer</button>}
+                    {results.length > 0 && !newQuiz && <button className="checkAns" onClick={checkAnswer}>Check answer</button>}
                     {newQuiz && <button className="checkAns" onClick={props.newGame}>Play Again</button>}
                 </div>
             </div>

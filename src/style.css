@@ -1,6 +1,18 @@
 * {
   background-color: #020c1b;
+  box-sizing: border-box;
 }
+
+/* .grid-container {
+  width: 100vw;
+  height: 20vh;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 50px 60px 90px;
+  grid-template-columns: 1fr 2fr;
+  color: white;
+  grid-row: 1/4;
+} */
 
 .main-container {
   width: 90%;
@@ -44,7 +56,6 @@
 }
 
 /* button */
-
 
 .quiz-button {
   color: #e6f1ff;
@@ -127,11 +138,6 @@
   .answer-options {
     display: inline-block;
     margin-right: 0.5em;
-
   }
 
-}
-
-* {
-  box-sizing: border-box;
 }
